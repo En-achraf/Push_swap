@@ -6,11 +6,11 @@
 /*   By: acennadi <acennadi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/04 05:37:17 by acennadi          #+#    #+#             */
-/*   Updated: 2025/04/18 20:38:48 by acennadi         ###   ########.fr       */
+/*   Updated: 2025/04/18 22:26:03 by acennadi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../../includes/ft_printf.h"
+#include "../../includes/utiles.h"
 
 int	ft_putstr(char *s)
 {

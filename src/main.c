@@ -6,7 +6,7 @@
 /*   By: acennadi <acennadi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/17 15:39:13 by acennadi          #+#    #+#             */
-/*   Updated: 2025/04/18 21:13:44 by acennadi         ###   ########.fr       */
+/*   Updated: 2025/04/18 22:32:01 by acennadi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,8 +32,7 @@ static void	stack_sort(t_stacks *stacks)
 int main(int ac, char **av)
 {
     t_stacks *stacks;
-    
-    if (ac > 2)
+    if (ac < 2)
         return (0);
     stacks = parse_input(ac, av);
     if (!stacks)

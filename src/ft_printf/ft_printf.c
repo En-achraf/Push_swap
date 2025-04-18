@@ -6,11 +6,11 @@
 /*   By: acennadi <acennadi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/12 16:14:26 by acennadi          #+#    #+#             */
-/*   Updated: 2025/04/18 20:38:14 by acennadi         ###   ########.fr       */
+/*   Updated: 2025/04/18 22:25:28 by acennadi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../../includes/ft_printf.h"
+#include "../../includes/utiles.h"
 
 static void	ft_print(char const *format, int i, int *count)
 {

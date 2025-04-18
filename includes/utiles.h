@@ -3,9 +3,9 @@
 
 #include <unistd.h>
 #include <stdlib.h>
-# include "ft_printf.h"
 # include <stdio.h>
 # include <stdlib.h>
+# include <stdarg.h>
 # include <unistd.h>
 
 # define INT_MAX 2147483647
@@ -18,6 +18,15 @@ typedef struct s_stacks
 	int		size_a;
 	int		size_b;
 }			t_stacks;
+
+int		ft_printf(const char *format, ...);
+void	ft_putchar(char c);
+void	ft_putnbr(int n, int *len);
+int		ft_putstr(char *s);
+int		more_form(va_list pt_arg, const char *format, int i);
+void	ft_puthex(unsigned long n, int *lenth);
+void	ft_unputnbr(unsigned int nb, int *len);
+void	putnb_hex(unsigned int number, int mode, int *len);
 
 size_t	ft_strlen(const char *s);
 char		*ft_strdup(const char *s);

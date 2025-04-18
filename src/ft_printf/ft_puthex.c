@@ -6,11 +6,11 @@
 /*   By: acennadi <acennadi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/14 17:31:08 by acennadi          #+#    #+#             */
-/*   Updated: 2025/04/18 20:38:22 by acennadi         ###   ########.fr       */
+/*   Updated: 2025/04/18 22:26:45 by acennadi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../../includes/ft_printf.h"
+#include "../../includes/utiles.h"
 
 void	ft_puthex(unsigned long n, int *lenth)
 {

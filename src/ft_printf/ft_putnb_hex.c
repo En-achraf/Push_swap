@@ -6,11 +6,11 @@
 /*   By: acennadi <acennadi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/16 04:51:40 by acennadi          #+#    #+#             */
-/*   Updated: 2025/04/18 20:38:40 by acennadi         ###   ########.fr       */
+/*   Updated: 2025/04/18 22:26:36 by acennadi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../../includes/ft_printf.h"
+#include "../../includes/utiles.h"
 
 void	putnb_hex(unsigned int number, int mode, int *len)
 {

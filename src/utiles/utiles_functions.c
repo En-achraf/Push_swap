@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   utiles_functions.c                                 :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: root <root@student.42.fr>                  +#+  +:+       +#+        */
+/*   By: acennadi <acennadi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/17 15:38:04 by acennadi          #+#    #+#             */
-/*   Updated: 2025/04/18 17:29:07 by root             ###   ########.fr       */
+/*   Updated: 2025/04/18 22:47:22 by acennadi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -91,9 +91,10 @@ long	ft_atoi(const char *str)
 	res = 0;
 	while (str[i] >= '0' && str[i] <= '9')
 	{
-		if (res > 2147483647 || res < -2147483648)
-			return (0);
-		res = res * 10 + (str[i] - 48);
+		res = res * 10 + (str[i] - '0');
+		if ((sign == 1 && res > INT_MAX) || (sign == -1 && res
+				> -(long)INT_MIN))
+			return (2147483650);
 		i++;
 	}
 	return (sign * res);
