@@ -22,6 +22,7 @@ void	sort_five(t_stacks *stacks);
 void	sort_big(t_stacks *stacks);
 int		find_smallest_pos(t_stacks *stacks);
 void	index_stack(t_stacks *stacks);
+int	has_duplicates(int *array, int size);
 
 
 #endif
