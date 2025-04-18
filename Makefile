@@ -1,16 +1,3 @@
-# **************************************************************************** #
-#                                                                              #
-#                                                         :::      ::::::::    #
-#    Makefile                                           :+:      :+:    :+:    #
-#                                                     +:+ +:+         +:+      #
-#    By: acennadi <acennadi@student.42.fr>          +#+  +:+       +#+         #
-#                                                 +#+#+#+#+#+   +#+            #
-#    Created: 2025/02/14 13:00:50 by isel-kha          #+#    #+#              #
-#    Updated: 2025/04/18 20:42:25 by acennadi         ###   ########.fr        #
-#                                                                              #
-# **************************************************************************** #
-
-
 NAME = push_swap
 BONUS = checker
 CC = cc
@@ -32,7 +19,12 @@ SRCS = src/main.c \
        src/parsing.c \
        src/parsing_utiles.c \
        src/return_error.c \
+       src/sort_first_tow.c \
+       src/sort_five.c \
+       src/sort_four.c \
+       src/sort_big.c \
 	$(UTILES_SRCS)
+
 
 OBJS = $(SRCS:.c=.o)
 all: $(NAME)
