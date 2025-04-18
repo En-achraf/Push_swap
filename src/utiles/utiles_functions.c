@@ -6,12 +6,11 @@
 /*   By: acennadi <acennadi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/17 15:38:04 by acennadi          #+#    #+#             */
-/*   Updated: 2025/04/18 22:47:22 by acennadi         ###   ########.fr       */
+/*   Updated: 2025/04/19 00:08:51 by acennadi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../../includes/utiles.h"
-
 
 int	ft_isdigit(int c)
 {
@@ -50,9 +49,9 @@ char	*ft_strdup(const char *s1)
 
 char	*ft_strjoin(char const *s1, char const *s2)
 {
-    int		i;
-	int		j;
-	char	*result;
+	char		*result;
+	int			i;
+	int			j;
 
 	if (!s1)
 		return (ft_strdup(s2));
@@ -75,8 +74,8 @@ char	*ft_strjoin(char const *s1, char const *s2)
 long	ft_atoi(const char *str)
 {
 	long	res;
-	int	sign;
-	int	i;
+	int		sign;
+	int		i;
 
 	i = 0;
 	while (str[i] == ' ' || (str[i] >= 9 && str[i] <= 13))

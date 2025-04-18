@@ -1,11 +1,23 @@
-#ifndef UTILES_H 
-#define UTILES_H
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   utiles.h                                           :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: acennadi <acennadi@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2025/04/18 22:52:51 by acennadi          #+#    #+#             */
+/*   Updated: 2025/04/18 22:53:01 by acennadi         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 
-#include <unistd.h>
-#include <stdlib.h>
+#ifndef UTILES_H
+# define UTILES_H
+
+# include <stdarg.h>
 # include <stdio.h>
 # include <stdlib.h>
-# include <stdarg.h>
+# include <stdlib.h>
+# include <unistd.h>
 # include <unistd.h>
 
 # define INT_MAX 2147483647
@@ -19,20 +31,20 @@ typedef struct s_stacks
 	int		size_b;
 }			t_stacks;
 
-int		ft_printf(const char *format, ...);
-void	ft_putchar(char c);
-void	ft_putnbr(int n, int *len);
-int		ft_putstr(char *s);
-int		more_form(va_list pt_arg, const char *format, int i);
-void	ft_puthex(unsigned long n, int *lenth);
-void	ft_unputnbr(unsigned int nb, int *len);
-void	putnb_hex(unsigned int number, int mode, int *len);
+int			ft_printf(const char *format, ...);
+void		ft_putchar(char c);
+void		ft_putnbr(int n, int *len);
+int			ft_putstr(char *s);
+int			more_form(va_list pt_arg, const char *format, int i);
+void		ft_puthex(unsigned long n, int *lenth);
+void		ft_unputnbr(unsigned int nb, int *len);
+void		putnb_hex(unsigned int number, int mode, int *len);
 
-size_t	ft_strlen(const char *s);
+size_t		ft_strlen(const char *s);
 char		*ft_strdup(const char *s);
-char	*ft_strjoin(char const *s1, char const *s2);
+char		*ft_strjoin(char const *s1, char const *s2);
 int			ft_isdigit(int c);
-long	ft_atoi(const char *str);
+long		ft_atoi(const char *str);
 
 t_stacks	*init_stacks(int size);
 int			fill_stack_a(char *str, t_stacks *stacks);

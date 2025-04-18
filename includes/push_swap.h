@@ -1,7 +1,19 @@
-#ifndef PUSH_SWAP_H
-#define PUSH_SWAP_H
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   push_swap.h                                        :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: acennadi <acennadi@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2025/04/18 22:52:47 by acennadi          #+#    #+#             */
+/*   Updated: 2025/04/18 22:52:48 by acennadi         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 
-#include "utiles.h"
+#ifndef PUSH_SWAP_H
+# define PUSH_SWAP_H
+
+# include "utiles.h"
 
 void	sa(t_stacks *stacks);
 void	sb(t_stacks *stacks);
@@ -15,14 +27,12 @@ void	rra(t_stacks *stacks);
 void	rrb(t_stacks *stacks);
 void	rrr(t_stacks *stacks);
 
-
 void	sort_three(t_stacks *stacks);
 void	sort_four(t_stacks *stacks);
 void	sort_five(t_stacks *stacks);
 void	sort_big(t_stacks *stacks);
 int		find_smallest_pos(t_stacks *stacks);
 void	index_stack(t_stacks *stacks);
-int	has_duplicates(int *array, int size);
-
+int		has_duplicates(int *array, int size);
 
 #endif

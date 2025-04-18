@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   c.c                                                :+:      :+:    :+:   */
+/*   stack_utiles.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: acennadi <acennadi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/18 21:36:46 by acennadi          #+#    #+#             */
-/*   Updated: 2025/04/18 21:47:56 by acennadi         ###   ########.fr       */
+/*   Updated: 2025/04/18 23:02:05 by acennadi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,7 +31,7 @@ int	has_duplicates(int *array, int size)
 	}
 	return (0);
 }
-            
+
 t_stacks	*init_stacks(int size)
 {
 	t_stacks	*stacks;
@@ -47,7 +47,7 @@ t_stacks	*init_stacks(int size)
 		error_exit(stacks);
 	return (stacks);
 }
-            
+
 int	fill_stack_a(char *str, t_stacks *stacks)
 {
 	int	i;

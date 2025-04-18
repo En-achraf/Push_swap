@@ -6,7 +6,7 @@
 /*   By: acennadi <acennadi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/18 20:46:07 by acennadi          #+#    #+#             */
-/*   Updated: 2025/04/18 20:46:08 by acennadi         ###   ########.fr       */
+/*   Updated: 2025/04/18 22:56:11 by acennadi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,12 +14,12 @@
 
 char	*join_arguments(int ac, char **av)
 {
+	int		i;
 	char	*result;
 	char	*temp;
-	int		i;
 
-	result = NULL;
 	i = 1;
+	result = NULL;
 	while (i < ac)
 	{
 		if (!result)
