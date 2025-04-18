@@ -22,8 +22,9 @@ SRCS = src/main.c \
        src/sort_first_tow.c \
        src/sort_five.c \
        src/sort_four.c \
-       src/swap_op.c \
+       src/swap_op.c\
        src/sort_big.c \
+       src/stack_utiles.c \
 	$(UTILES_SRCS)
 
 
