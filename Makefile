@@ -28,7 +28,7 @@ SRCS = src/main.c \
        src/sorting_helpers.c \
        src/rotation_op.c \
        src/push_op.c \
-       src/rev_rotation_op.c \
+       src/rev_rotate_op.c \
 	$(UTILES_SRCS)
 
 
