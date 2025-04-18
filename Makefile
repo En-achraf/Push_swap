@@ -25,6 +25,8 @@ SRCS = src/main.c \
        src/swap_op.c\
        src/sort_big.c \
        src/stack_utiles.c \
+       src/sorting_helpers.c \
+       src/rotation_op.c \
 	$(UTILES_SRCS)
 
 
